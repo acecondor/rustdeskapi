@@ -38,12 +38,14 @@ sudo apt-get update && \
 ````
 - Copy publish directory to the target machine, default path is `/var/rustdeskapi`. If you uses another directory change path in `rustdeskapi.service` file.
 - Run the following command:
-```` 
+````
 wget https://raw.githubusercontent.com/acecondor/rustdeskapi/main/install/install.sh
 chmod +x install.sh
 sudo install.sh
 ````
 Bash script will install and configure rustdeskapi.service in systemd.
+
+Check status: `systemctl status rustdeskapi.service`
 
 #### Run in docker
 
