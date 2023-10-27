@@ -11,7 +11,8 @@ fi
 echo "User $username created"
 
 # set permissions
-chown -R $username:$username ./
+chown -R $username:$username /var/rustdeskapi
+echo "Set permissions"
 
 # create services
 yes | cp -rf ./rustdeskapi.service /etc/systemd/system/
